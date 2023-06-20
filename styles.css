@@ -1,0 +1,284 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#profile{
+    z-index: 2;
+    position: absolute;
+    left: 43%;
+    top: 10%;
+    animation: opac 3s 1 alternate;
+}
+@keyframes opac{
+    0%{opacity: 0.2;
+      height: 100px;
+      width: 100px;
+    }
+    100%{opacity: 1;
+    height: 240px;
+  width: 240px;}
+}
+.first{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+    .subheading {
+        font-size: 1rem;
+    }
+  }
+.bg-img{
+    position: absolute;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    color: antiquewhite;
+    margin-top: 0px;
+    font-size: 3.25rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2;
+    text-shadow: 3px 3px 3px black;
+    animation: size_in 1s 1 alternate;
+}
+@keyframes size_in{
+    0%{font-size: 1.85rem;}
+    100%{font-size: 3.25rem;}
+}
+.subheading{
+    position: absolute;
+    left: 21%;
+    top: 56%;
+    font-size: 5.625rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    animation: size_inc 1s 1 alternate;
+}
+@keyframes size_inc {
+    0%{font-size: 3rem;}
+    100%{font-size: 5.625rem;}
+}
+.second{
+    height: 40vh;
+    background-color: #DDE6ED;
+    margin-bottom: 0%;
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+    resize: both;
+    overflow: auto;
+}
+.about{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.us{
+    color: #212A3E;
+}
+.para{
+    font-size: 1.3rem;
+    font-family: Calibri;
+    text-align: center;
+    padding-top: 19px;
+    opacity: .8;
+}
+.paratwo{
+    font-size: 1.3rem;
+    font-family: Calibri;
+    text-align: center;
+    padding-left: 228px;
+    padding-right: 228px;
+    opacity: .8;
+}
+.third{
+    height: 140vh;
+    display: block;
+    padding:0px;
+    margin:0px;
+}
+.skill-row{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: left;
+    line-height: 2;
+}
+.one{
+    width: 35%;
+    float: left;
+    margin-right: 25px;
+}
+.two{
+    width: 30%;
+    float: right;
+    margin-left: 25px;
+}
+.aboutweb{
+    font-size: 1.3rem;
+    font-family: Calibri;
+    opacity: 1.5;
+    color: #213363;
+    text-shadow: .5px .5px .5px black;
+}
+.web{
+    font-size: 1.5rem;
+    color: #2B2730;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: .5px .5px .5px black;
+
+}
+.language{
+    font-size: 1.5rem;
+    color: #2B2730;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: .5px .5px .5px black;
+    padding-left: 270px;
+}
+.aboutlang{
+    font-size: 1.3rem;
+    font-family: Calibri;
+    opacity: 1.5;
+    color: #213363;
+    text-shadow: .5px .5px .5px black;
+    text-align: center;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.wooh{
+    text-decoration: none;
+}
+.footer{
+    height: 20vh;
+    background-color: black;
+    padding-top: 80px;
+    padding-left: 590px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #D61355;
+    color: white;
+  }
+  .fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}  
+.topnav {
+    overflow: hidden;
+    background-color: #27374D;
+}
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIKHAR CHAUDHARY</title>
+    <link rel="icon" href="C:\Users\shikhar chaudhary\OneDrive\Desktop\Coding\WEBDEV1\PMIG.html\favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="#home" href="#home">Home</a>
+        <a href="#kk">About</a>
+        <a href="#redirect">Skills</a>
+        <a href="#footer">Socials</a>
+    </div>
+    <div class="first" id="home">
+        <img id="profile" src="C:\Users\shikhar chaudhary\OneDrive\Desktop\Coding\WEBDEV1\PMIG.html\WhatsApp Image 2023-06-19 at 4.43.18 AM-fotor-202306194463.png" height="240px" width="240px">
+        <img class="bg-img" src="C:\Users\shikhar chaudhary\OneDrive\Desktop\Coding\WEBDEV1\PMIG.html\dots-6297146.jpg">
+        <h2 class="heading">Hi!! I am </h2>
+        <h1 class="subheading">SHIKHAR CHAUDHARY</h1>
+    </div>
+    <div class="second">
+        <h2 class="about" id="kk"><span class="us">About </span>Me</h2>
+        <div class="secondin">
+            <p class="para">Hello everyone, I am Shikhar Chaudhary, a junior undergrad student at IIT Kanpur.</p>
+            <p class="paratwo">I am pursuing my bachelor's degree in <a href="https://www.iitk.ac.in/mse/">Material Science and Engineering</a>. I am in first year of my degree. My hobbies is to play cricket and I also give plenty of time to Book reading.</p>
+        </div>
+    </div>
+    <div class="third">
+        <h2 class="about"><a href="#redirect"><span class="us">My Interests & Skills</span></h2></a>
+        <h2 class="about"><span class="us">My</span> Skills.</h2>
+          <div class="skill-row" id="redirect">
+            <img class="one" src="C:\Users\shikhar chaudhary\OneDrive\Desktop\Coding\WEBDEV1\PMIG.html\coding.png" alt="Geopolitics">
+            <h3 class="web"><a href="https://github.com/" class="wooh">Web Development</h3></a>
+            <p class="aboutweb">I am proficient in front-end web development and back-end development. I am enhancing of my knowledge of back-end and servers. I am very ethusiastic towards it. I have knowledge of HTML5, CSS, JS, NODEJS, ExpressJS in Web Development.</p>
+          </div>
+          <div class="skill-row">
+            <img class="two" src="C:\Users\shikhar chaudhary\OneDrive\Desktop\Coding\WEBDEV1\PMIG.html\code.png" alt="language and coding">
+            <h3 class="language"><a href="https://github.com/" class="wooh">Technical Skills</h3></a>
+            <p class="aboutlang">I have recently learning languages like C, C++ and Python. I can also work in Jupyter and Google Colab.</p>
+          </div>
+    </div>
+    <button class="open-button" onclick="openForm()">Contact Me</button>
+
+    <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Fill it, I will contact you 🙄</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Message</b></label>
+        <input type="text" placeholder="Enter Message" name="psw" required>
+
+        <button type="submit" class="btn" onclick={this.sendEmail}>Send Message</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <div class="footer" id="footer">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/shikhar-chaudhary-03bb61255/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/shikharr.r/" class="fa fa-instagram"></a>
+        <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+    </div>
+    
+</body>
+</html>
